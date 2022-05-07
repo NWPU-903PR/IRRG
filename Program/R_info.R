@@ -8,8 +8,7 @@
 #' @param data a data frame of n rows (genes) and m columns (cells) of read or UMI counts
 #' @param cluster a numeric vector of length m
 #' @param c.names  cluster names
-#' @param cell.prop a threshold, only the genes expressed in this proportion of
-#' the cells of the coi will be taken into account
+#' @param cell.prop a threshold, only the genes expressed in this proportion of the cells of the coi will be taken into account
 #' @param write_netdat Locally preserve gene expression information in individual receptor gene regulatory networks
 #' @param write_netdat Save the adjacency matrix information in each receptor gene regulatory network locally
 #' @param LRdb Ligand-Receptor database
@@ -21,8 +20,8 @@ R_info<-function(data,
                  cluster,
                  c.names,
                  cell.prop,
-                 write_netdat=T,
-                 write_net=T,
+                 write_netdat=F,
+                 write_net=F,
                  LRdb,
                  mm2Hs,
                  PWC,

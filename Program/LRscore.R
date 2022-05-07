@@ -218,7 +218,7 @@ LRscore<-function(data,
   i<-1
   for (ligand in c.names) {
     for (receptor in c.names) {
-      if(Rinfo==1){
+      if(Permutation.test==TRUE){
         res_utl_path<-paste('./',res_sig.path,'/',ligand,'_',receptor,'.csv',sep = '')
       }else{
         res_utl_path<-paste('./',res.path,'/',ligand,'_',receptor,'.csv',sep = '')
